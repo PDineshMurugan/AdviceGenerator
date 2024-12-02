@@ -1,6 +1,6 @@
 const url='https://api.adviceslip.com/advice';
 document.getElementById("#id")
-function click(e){
+function handleclick(e){
     if(e.target){
         reload();
     }
@@ -12,7 +12,6 @@ document.querySelector("#advice").innerHTML="wait we retriving ";
 .then(function (respone)
 {
     return respone.json();
-    console.log(respone.json());
 }
 )
 .then(function(data)
